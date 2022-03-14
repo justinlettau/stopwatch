@@ -11,15 +11,17 @@ function App() {
   };
 
   return (
-    <main className="container mx-auto">
-      <div className="flex flex-col">
-        <section className="border-b bg-gray-50 p-10">
+    <main className="flex flex-col">
+      <section className="border-b bg-gray-50 p-10">
+        <div className="container mx-auto">
           <Stopwatch onStop={handleStop} />
-        </section>
-        <section className="p-10">
+        </div>
+      </section>
+      <section className="p-10">
+        <div className="container mx-auto">
           <History data={history} />
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
