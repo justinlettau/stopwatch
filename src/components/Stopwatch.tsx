@@ -17,10 +17,10 @@ function Stopwatch({ onStop }: StopwatchProps) {
     let id: number;
 
     if (isRunning) {
-      id = setInterval(() => setNow(new Date()), 5);
+      id = window.setInterval(() => setNow(new Date()), 5);
     }
 
-    return () => clearInterval(id);
+    return () => window.clearInterval(id);
   });
 
   const handleToggle = () => {
