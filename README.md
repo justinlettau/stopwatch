@@ -1,6 +1,8 @@
 [![CI](https://github.com/justinlettau/stopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/justinlettau/stopwatch/actions/workflows/ci.yml)
 
-# Stopwatch
+# ⏱️ Stopwatch
+
+A simple web based stopwatch app.
 
 https://justinlettau.github.io/stopwatch/
 
