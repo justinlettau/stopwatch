@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import play from '../assets/play.svg';
-import stop from '../assets/stop.svg';
+import { ReactComponent as PlayIcon } from '../assets/play.svg';
+import { ReactComponent as StopIcon } from '../assets/stop.svg';
 import Time from './Time';
 
 export interface StopwatchProps {
@@ -42,9 +42,9 @@ function Stopwatch({ onStop }: StopwatchProps) {
         <button
           type="button"
           onClick={handleToggle}
-          className="rounded-full bg-sky-500 p-4 transition-colors hover:bg-sky-600"
+          className="rounded-full bg-sky-500 p-4 text-2xl transition-colors hover:bg-sky-600"
         >
-          <img src={isRunning ? stop : play} />
+          {isRunning ? <StopIcon /> : <PlayIcon />}
         </button>
       </div>
     </div>

@@ -32,7 +32,7 @@ function History({ data }: HistoryProps) {
           {data.map((item) => (
             <tr key={item.id}>
               <td className="py-1">
-                <span className="text-gray-500">#{item.id}</span>
+                <span className="text-neutral-400">#{item.id}</span>
               </td>
               <td className="px-2 py-1">
                 <Time value={item.milliseconds} />
