@@ -35,11 +35,21 @@ function App() {
           <Stopwatch onStop={handleStop} />
         </div>
       </section>
-      <section className="p-10">
+      <section className="flex-1 p-10">
         <div className="container mx-auto">
           <History data={history} />
         </div>
       </section>
+      <footer className="p-10">
+        <p className="text-center">
+          <a
+            href="https://github.com/justinlettau/stopwatch"
+            className="text-sm text-neutral-400 hover:underline"
+          >
+            View on GitHub
+          </a>
+        </p>
+      </footer>
     </main>
   );
 }
